@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Courier New', monospace;
+      background: url('pics/MacBook Pro 16_ - 8 (1).png') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      overflow: hidden;
+      color: #000;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      position: relative;
+    }
+
+    .card {
+      box-shadow: 3px 3px #333;
+      width: 600px;
+      padding: 20px;
+      background-color: #fdfce6;
+      border: 6px solid #8ce2e2;
+      text-align: left;
+      position: relative;
+      z-index: 2;
+    }
+
+    .card h1 {
+      font-family: 'Press Start 2P', cursive;
+      text-align: center;
+      font-size: 24px;
+      color: #8ce2e2;
+      text-shadow: 1px 1px #000;
+      margin-bottom: 30px;
+    }
+
+    .field {
+      display: flex;
+      margin-bottom: 20px;
+      align-items: flex-start;
+    }
+
+    .label {
+      width: 100px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .value, .message {
+      font-family: 'Press Start 2P', cursive;
+      background-color: #eef2fb;
+      padding: 10px 15px;
+      border-radius: 30px;
+      font-size: 10px;
+      word-break: break-word;
+      color: #000;
+    }
+
+    .message {
+      width: 100%;
+      padding: 15px;
+    }
+
+    .arrow {
+      font-family: 'Press Start 2P', cursive;
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      font-size: 40px;
+      color: #ffffff;
+      cursor: pointer;
+    }
+
+    .arrow:hover {
+      color: #a35c89;
+    }
+
+    .socials {
+      position: absolute;
+      left: 30px;
+      top: 100px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      z-index: 2;
+    }
+
+    .socials img {
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+    }
+
+    .cat-image {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      width: 150px;
+    }
+
+    .cat-image img {
+      width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 700px) {
+      .card {
+        width: 90%;
+        padding: 15px;
+      }
+
+      .card h1 {
+        font-size: 18px;
+      }
+
+      .label {
+        width: 90px;
+        font-size: 12px;
+      }
+
+      .value, .message {
+        font-size: 8px;
+      }
+
+      .arrow {
+        font-family: 'Press Start 2P', cursive;
+  position: absolute;
+  top: 75%; /* <- change this */
+  left: 20px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 40px;
+  color: #ffffff;
+  cursor: pointer;
+      }
+
+      .socials {
+  position: absolute;
+  left: 30px;
+  top: 100px; 
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 2;
+}
+
+      .socials img {
+        width: 28px;
+        height: 28px;
+      }
+
+      .cat-image {
+        width: 100px;
+        right: 30px;
+        top: 190px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button class="arrow" onclick="goBack()">&lt;</button>
+
+    <div class="socials">
+      <a href="https://www.facebook.com/raghad.abudalhoum" target="_blank">
+        <img src="pics/facebook.png" alt="Facebook">
+      </a>
+      <a href="https://www.instagram.com/raghadk.abo_dalhoum/" target="_blank">
+        <img src="pics/instagram.png" alt="Instagram">
+      </a>
+      <a href="https://www.linkedin.com/in/raghad-abo-dalhoum-b9099a257/" target="_blank">
+        <img src="pics/linkedin (1).png" alt="LinkedIn">
+      </a>
+    </div>
+
+    <div class="card">
+      <h1>CONTACT ME</h1>
+
+      <div class="field">
+        <div class="label">Email:</div>
+        <a href="mailto:raghaddalhoum@gmail.com">
+          <div class="value">raghaddalhoum@gmail.com</div>
+        </a>
+      </div>
+
+      <div class="field">
+        <div class="label">Phone:</div>
+        <div class="value">+962 797850883</div>
+      </div>
+
+      <div class="field">
+        <div class="label">Message:</div>
+        <div class="message">
+          Hope you enjoyed playing this little game I made!!
+        </div>
+      </div>
+    </div>
+
+    <div class="cat-image">
+      <img src="pics/Screenshot_2025-05-25_182358-removebg-preview.png" alt="Cute Cat">
+    </div>
+  </div>
+
+  <script>
+    function goBack() {
+      window.location.href = "level5.html";
+    }
+  </script>
+</body>
+</html>

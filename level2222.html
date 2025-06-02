@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Press Start 2P', cursive;
+      background-image: url('pics/MacBook Pro 16_ - 8 (1).png'); 
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      text-align: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .overlay {
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 200%;
+      line-height: 1.5;
+      text-shadow: 2px 2px #000;
+      margin: 1rem 0;
+    }
+
+    h2 {
+      color: #ffffff;
+      font-size: 15px;
+      line-height: 1.5;
+      text-shadow: 1px 1px #000;
+      margin: 1.5rem 2rem;
+    }
+
+    .cat-img {
+      width: 150px;
+      margin-top: 30px;
+      transition: transform 0.2s;
+    }
+
+    .cat-img:hover {
+      transform: scale(1.5);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      h2 {
+        font-size: 0.85rem;
+        margin: 1rem;
+      }
+
+      .cat-img {
+        width: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1>LEVEL CLEARED!!</h1>
+    <h2>CLICK ON THE CAT <br>TO ENTER THE NEXT LEVEL</h2>
+    <a href="level3.html">
+      <img src="pics/Screenshot_2025-05-25_182358-removebg-preview.png" alt="Pixel Cat" class="cat-img" />
+    </a>
+  </div>
+</body>
+</html>

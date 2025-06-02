@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Congrats</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Press Start 2P', cursive;
+      background-image: url('pics/MacBook Pro 16_ - 8 (1).png'); 
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .overlay {
+      max-width: 800px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      text-shadow: 2px 2px #000;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 0.9rem;
+      line-height: 1.5rem;
+      text-shadow: 1px 1px #000;
+      margin-bottom: 2rem;
+    }
+
+    .start-button {
+      font-family: 'Press Start 2P', cursive;
+      background-color: #95e6db;
+      color: #261652;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.75rem;
+      box-shadow: 3px 3px #333;
+      cursor: pointer;
+      margin-bottom: 2rem;
+      transition: transform 0.2s;
+    }
+
+    .start-button:hover {
+      transform: scale(1.2);
+    }
+
+    .levels {
+      position: absolute;
+      top: 50%;
+      right: 5%;
+      transform: translateY(-50%);
+      text-align: right;
+    }
+
+    .levels a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin: 10px 0;
+      font-size: 0.75rem;
+      text-shadow: 1px 1px #000;
+    }
+
+    .levels a:hover {
+      color: #95e6db;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.25rem;
+      }
+
+      h2 {
+        font-size: 0.75rem;
+      
+      }
+
+      .start-button {
+        font-size: 0.65rem;
+      }
+
+      .levels {
+        position: static;
+        transform: none;
+        margin-top: 2rem;
+        text-align: center;
+      }
+
+      .levels a {
+        font-size: 0.7rem;
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1>CONGRATS!!</h1>
+    <h2>You have cleared all the levels!<br><br>
+        You can go back to any level you want<br>
+        or contact me for work.
+    </h2>
+    <button class="start-button" onclick="startGame()">CONTACT ME</button>
+
+    <div class="levels">
+      <a href="level1.html">LEVEL 1</a>
+      <a href="level2.html">LEVEL 2</a>
+      <a href="level3.html">LEVEL 3</a>
+      <a href="level4.html">LEVEL 4</a>
+      <a href="index.html">HOME PAGE</a>
+    </div>
+  </div>
+
+  <script>
+    function startGame() {
+      window.location.href = "level55.html"; // ← Change to your next page
+    }
+  </script>
+
+</body>
+</html>

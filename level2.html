@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LEVEL 1</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Press Start 2P', cursive;
+      background-image: url('pics/MacBook Pro 16_ - 8 (1).png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .overlay {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      line-height: 1.5;
+      text-shadow: 2px 2px #000;
+      margin: 1rem 0;
+    }
+
+    h2 {
+      font-size: 1rem;
+      line-height: 1.5;
+      text-shadow: 1px 1px #000;
+      margin: 1rem 2rem;
+    }
+
+    .start-button {
+      margin-top: 1.5rem;
+      font-family: 'Press Start 2P', cursive;
+      box-shadow: 3px 3px #333;
+      background-color: #95e6db;
+      color: rgb(38, 22, 82);
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      transition: transform 0.2s;
+      cursor: pointer;
+    }
+
+    .start-button:hover {
+      transform: scale(1.2);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+        margin-top: 0;
+      }
+
+      h2 {
+        font-size: 0.9rem;
+        margin: 1rem;
+      }
+
+      .start-button {
+        font-size: 0.7rem;
+        padding: 10px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="overlay">
+    <h1>LEVEL 2</h1>
+    <h2>EXPLORE MY SKILLS</h2>
+    <button class="start-button" onclick="startGame()">START</button>
+  </div>
+
+  <script>
+    function startGame() {
+      window.location.href = "level22.html";
+    }
+  </script>
+
+</body>
+</html>

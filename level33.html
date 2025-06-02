@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Technical Skills</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Press Start 2P', cursive;
+      height: 100vh;
+      background-image: url("pics/origbig.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+      max-width: 1000px;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .skill-box {
+      box-shadow: 3px 3px #333;
+      background-color: #fdfce6;
+      border: 6px solid #8ce2e2;
+      padding: 1rem;
+      margin: auto;
+      max-width: 350px;
+    }
+
+    .note {
+      font-size: 10px;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    .arrow {
+      font-family: 'Press Start 2P', cursive;
+      position: absolute;
+      top: 40%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      font-size: 40px;
+      color: #000000;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .arrow.left {
+      left: 10px;
+    }
+
+    .arrow.right {
+      right: 10px;
+    }
+
+    .arrow:hover {
+      color: #191257;
+    }
+
+    .cat-img {
+      width: 160px;
+      margin-top: 2rem;
+      transition: transform 0.2s;
+    }
+
+    .cat-img:hover {
+      transform: scale(1.2);
+    }
+
+    @media (max-width: 768px) {
+      .skill-box {
+        width: 90%;
+        padding: 1rem;
+      }
+
+      .note {
+        font-size: 12px;
+      }
+
+      .arrow {
+        font-size: 30px;
+      }
+
+      .cat-img {
+        width: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+  
+    <div class="skill-box">
+      <div class="note">
+        <p>hi there, Click on mr.cat and he will show you some of the projects i have worked on and successfully completed. a small description for each project will be provided.</p>
+      </div></div>
+      <a href="level333.html">
+        <img src="pics/Screenshot_2025-05-25_182358-removebg-preview.png" alt="Pixel Cat" class="cat-img">
+      </a>
+    
+
+   
+  </div>
+
+  <script>
+    function previousPage() {
+      window.location.href = "level3.html";
+    }
+
+    function nextPage() {
+      window.location.href = "level333.html";
+    }
+  </script>
+</body>
+</html>

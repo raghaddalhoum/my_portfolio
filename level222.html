@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Technical Skills</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Press Start 2P', cursive;
+      height: 100vh;
+      background-image: url("pics/origbig.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .skill-box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 45%;
+      max-width: 600px;
+      padding: 1em;
+      background-color: #fdfce6;
+      transform: translate(-50%, -50%);
+      border: 6px solid #8ce2e2;
+      box-shadow: 0 0 0 10px #fdfce6, 0 0 0 16px #6e4963;
+      z-index: 2;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .skills {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .skills ul {
+      list-style: none;
+      padding: 0;
+      font-size: 0.75rem;
+      margin: 0;
+    }
+
+    .skills ul li {
+      margin: 5px 0;
+    }
+
+    .star {
+      color: gold;
+      margin-right: 5px;
+    }
+
+    .note {
+      font-size: 0.65rem;
+      line-height: 1.4;
+      max-width: 180px;
+    }
+
+    .arrow {
+      font-family: 'Press Start 2P', cursive;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      font-size: 2.5rem;
+      color: #000000;
+      cursor: pointer;
+      user-select: none;
+      z-index: 3;
+    }
+
+    .arrow.left {
+      left: 10px;
+    }
+
+    .arrow.right {
+      right: 10px;
+    }
+
+    .arrow:hover {
+      color: #191257;
+    }
+
+    /* 📱 Mobile adjustments */
+    @media (max-width: 768px) {
+      .skill-box {
+        width: 85%;
+        padding: 1em;
+      }
+
+      .skills {
+        flex-direction: column;
+        padding-left: 30px;
+        align-items: left;
+      }
+
+      .skills ul {
+        font-size: 0.6rem;
+        text-align: left;
+      }
+
+      .note {
+        font-size: 0.55rem;
+        text-align: center;
+        margin-left: 4rem;
+        margin-top: 1rem;
+        width: 100%;
+      }
+
+      .title {
+        font-size: 0.85rem;
+      }
+
+      .arrow {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button class="arrow left" onclick="previousPage()">&lt;</button>
+
+    <div class="skill-box">
+      <div class="title">SOFT SKILLS</div>
+      <div class="skills">
+        <ul>
+          <li><span class="star">★</span>Problem Solving</li>
+          <li><span class="star">★</span>Attention to details</li>
+          <li><span class="star">★</span>Adaptability</li>
+          <li><span class="star">★</span>Critical Thinking</li>
+          <li><span class="star">★</span>Fast Learner</li>
+          <li><span class="star">★</span>Creativity</li>
+          <li><span class="star">★</span>Teamwork & Collaboration</li>
+         
+
+        </ul>
+        
+      </div>
+    </div>
+
+    <button class="arrow right" onclick="nextPage()">&gt;</button>
+  </div>
+
+  <script>
+    function previousPage() {
+      window.location.href = "level22.html";
+    }
+
+    function nextPage() {
+      window.location.href = "level2222.html";
+    }
+  </script>
+</body>
+</html>

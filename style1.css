@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Press Start 2P', cursive;
+  background: url('pics/origbig.png') no-repeat center center fixed;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.overlay {
+  display: contents;
+  
+  align-items: flex-start;
+  height: 10%;
+  padding: 30%;
+}
+
+.left-section {
+  text-align: center;
+}
+
+h1 {
+ font-size: 200%;
+  line-height: 1.5;
+  color: #ffffff;
+  text-shadow: 2px 2px #000;
+  margin-top: 40%;
+}
+
+.subtitle {
+    color: #439ca8;
+  font-size: 15px;
+  line-height: 1.5;
+  text-shadow: 1px 1px #000;
+  margin: 20px 60px;
+}
+
+.start-button {
+  font-family: 'Press Start 2P', cursive;
+  padding: 14px 32px;
+  background: none;
+  font-size: 20px;
+  border: none;
+  text-shadow: 1px 1px #000;
+  border-radius: 12px;
+  color: rgb(192, 40, 40);
+  cursor: pointer;
+  transition: transform 0.2s;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.start-button:hover {
+  transform: scale(1.5);
+}
+
+
+.right-section {
+  text-align: r;
+}
+
+.follow-text {
+  font-size: 15px;
+  
+  text-shadow: 1px 1px #000;
+}
+
+.social-icons img {
+  width: 30px;
+  margin: 3% 10px;
+  margin-bottom: 30%;
+  filter: drop-shadow(1px 1px 1px #000);
+}
